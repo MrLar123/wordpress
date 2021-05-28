@@ -12,7 +12,8 @@ pipeline {
         stage('deploy') {
           steps {
             timestamps() {
-              sh 'ls - l '
+              sh '''ls -l
+pwd'''
             }
 
           }
